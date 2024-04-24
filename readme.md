@@ -3,7 +3,6 @@
 Fragment hash based router, for Sycamore
 
 [![Crates.io](https://img.shields.io/crates/v/fracter?style=flat-square)](https://crates.io/crates/fracter)
-[![docs.rs](https://img.shields.io/docsrs/fracter?style=flat-square)](https://docs.rs/fracter)
 
 [Live demo](https://acheul.github.io/fracter/)
 
