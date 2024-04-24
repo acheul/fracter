@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+
+html, body, main, .full {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.main-wrap {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+}
+
+.navs {
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.nav {
+  cursor: pointer;
+  margin: 0 8px;
+}
+.nav::before {
+  content: "🍫 ";
+  transition: font-size .1s;
+}
+.nav:hover::before {
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.frag-wrap {
+  position: relative;
+}
+.frag-title {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}

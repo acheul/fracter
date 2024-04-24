@@ -1,0 +1,19 @@
+[package]
+name = "fracter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gloo-utils = "0.2.0"
+seoul = "0.1.0"
+sycamore = { version = "0.9.0-beta.2" }
+wasm-bindgen = "0.2.92"
+
+[dependencies.web-sys]
+version = "0.3.69"
+features = [
+  "Element",
+  "Location", "Event", "History", "PopStateEvent", "MouseEvent"
+]
