@@ -3,7 +3,7 @@ use fracter::{Fracter, Isomorphism};
 
 
 #[derive(Debug, Default, Clone, Copy, Eq, PartialEq, Isomorphism, Hash)]
-#[isomorphism(u8, list=[Index, Notice, Contact])]
+#[isomorphism(list=[Index, Notice, Contact])]
 pub enum Fragment {
   #[default] Index,
   Notice,

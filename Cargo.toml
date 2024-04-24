@@ -2,8 +2,16 @@
 name = "fracter"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Acheul <seoul605.21@gmail.com>"]
+repository = "https://github.com/acheul/fracter"
+description = "Fragment hash based router, for Sycamore"
+categories = ["wasm", "web-programming"]
+keywords = ["fragment-hash"]
+readme = "readme.md"
+license = "MIT"
+exclude = [
+  "/ex-sycamore",
+]
 
 [dependencies]
 gloo-utils = "0.2.0"
@@ -14,6 +22,6 @@ wasm-bindgen = "0.2.92"
 [dependencies.web-sys]
 version = "0.3.69"
 features = [
-  "Element",
-  "Location", "Event", "History", "PopStateEvent", "MouseEvent"
+  "Location", "PopStateEvent"
+  # "History"
 ]

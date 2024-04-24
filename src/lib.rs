@@ -1,3 +1,5 @@
+#![doc=include_str!("../readme.md")]
+
 use wasm_bindgen::prelude::*;
 use sycamore::prelude::*;
 pub use seoul::Isomorphism;
@@ -61,9 +63,9 @@ pub trait Fracter: Default + PartialEq {
         if let Some(name) = fracter.with(|x| x.name()) {
           if Self::get_hash() != name {
             Self::set_hash(&name);
-  
-            let history = gloo_utils::window().history().unwrap_throw();
-            history.push_state_with_url(&JsValue::NULL, &name, Some(&format!("#{}", name))).unwrap_throw();
+            // No need to update history
+            // let history = gloo_utils::window().history().unwrap_throw();
+            // history.push_state_with_url(&JsValue::NULL, &name, Some(&format!("#{}", name))).unwrap_throw();
           }
         } else {
           Self::set_hash("");

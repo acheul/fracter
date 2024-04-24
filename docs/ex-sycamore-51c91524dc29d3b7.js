@@ -216,15 +216,6 @@ function __wbg_get_imports() {
         const ret = getObject(arg0).parentNode;
         return isLikeNone(ret) ? 0 : addHeapObject(ret);
     };
-    imports.wbg.__wbg_history_bc4057de66a2015f = function() { return handleError(function (arg0) {
-        const ret = getObject(arg0).history;
-        return addHeapObject(ret);
-    }, arguments) };
-    imports.wbg.__wbg_pushState_b8e8d346f8bb33fd = function() { return handleError(function (arg0, arg1, arg2, arg3, arg4, arg5) {
-        var v0 = getCachedStringFromWasm0(arg2, arg3);
-        var v1 = getCachedStringFromWasm0(arg4, arg5);
-        getObject(arg0).pushState(getObject(arg1), v0, v1);
-    }, arguments) };
     imports.wbg.__wbg_removeEventListener_92cb9b3943463338 = function() { return handleError(function (arg0, arg1, arg2, arg3) {
         var v0 = getCachedStringFromWasm0(arg1, arg2);
         getObject(arg0).removeEventListener(v0, getObject(arg3));
@@ -384,16 +375,16 @@ function __wbg_get_imports() {
         const ret = getObject(arg0).document;
         return isLikeNone(ret) ? 0 : addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper54 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper52 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 3, __wbg_adapter_14);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper56 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper54 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 3, __wbg_adapter_17);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper299 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 40, __wbg_adapter_20);
+    imports.wbg.__wbindgen_closure_wrapper294 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 39, __wbg_adapter_20);
         return addHeapObject(ret);
     };
 
@@ -434,7 +425,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('ex-sycamore-afe45cd1a3ba322c_bg.wasm', import.meta.url);
+        input = new URL('ex-sycamore-51c91524dc29d3b7_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
